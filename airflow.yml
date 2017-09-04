@@ -1,0 +1,8 @@
+---
+- name: Install and Configure airflow
+  hosts: vagrant
+  become: True
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: idealista.airflow-role }
